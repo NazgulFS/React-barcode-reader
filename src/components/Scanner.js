@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import './scann.css';
 import { Col, Row, Card } from 'react-bootstrap';
 import Quagga from "quagga";
+import './scann.css';
 
 const Scanner = () => {
   const [item, setItem] = useState();
@@ -18,8 +18,8 @@ const Scanner = () => {
         inputStream: {
           type: "LiveStream",
           constraints: {
-            width: 300,
-            height: 300,
+            width: 425,
+            height: 400,
             facing: "environment", // or user
           },
         },
@@ -47,7 +47,8 @@ const Scanner = () => {
         Quagga.start();
       }
     );
-    Quagga.onDetected(onDetected);
+    Quagga.onDetected(onDetected );
+    
 
     return () => {
       Quagga.offDetected(onDetected);
@@ -55,23 +56,25 @@ const Scanner = () => {
   }, []);
 
   return (
-    <Row id="cards">
-      <Col className="video" md={4} sm={6}>
-        <Card bg='primary'>
-          <Card.Header>Scanner</Card.Header>
-          <Card.Body>
-            <div id="interactive" className="viewport" />
-          </Card.Body>
-        </Card>
+    <Row id="videodata">
+      <Col md={6} sm={12}>
+      <div id="interactive" class="viewport">
+        <video class="videoCamera" autoplay="true" preload="auto" src="" muted="true"
+              playsinline="true"></video>
+        <canvas class="drawingBuffer"></canvas>
+      </div>
       </Col>
-      <Col id="data" md={{ span: 4, offset: 4 }}  sm={6}  >
-        <Card bg='secondary'>
-            <Card.Header>Data</Card.Header>
+      <Col md={{span: 4, offset: 2}} sm={12}>
+        <Card>
             <Card.Body>
-            <p>code: {item}</p>
-            <p>code format: {format}</p>
+              <Card.Header>Barcode data</Card.Header>
+              <Card.Text>
+                <p>CODE: {item}</p>
+                <p>CODE FORMAT: {format}</p> 
+              </Card.Text>
             </Card.Body>
-          </Card>        
+          </Card>
+       
       </Col>
     </Row>
   );

@@ -1,0 +1,19 @@
+.drawingBuffer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.card{
+  height: 288px;
+  width: 352px;
+  border: solid 2px black; 
+}
+
+#videodata{
+  padding: 20px;
+}
+
+video{
+  border: 2px solid black;
+}

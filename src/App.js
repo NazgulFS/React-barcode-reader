@@ -6,9 +6,9 @@ import './App.css';
 function App() {
   return (
     <Fragment>
-      <Container md={12} className="body">
+      <Container id="body">
         <Row id="title"><h1>CODE-BAR READER</h1></Row>
-        <Row><Scanner /></Row>
+        <Scanner />
       </Container>
     </Fragment>
   );

@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+#title{
+    justify-content: center;
+    background-color: rgb(223, 217, 217);
+    margin: 5px;
+    border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+    margin: 10px;
+    background-color: #b1afb3;
+    max-height: 1200px;
+    padding: 15px;
+    border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#title h1{
+    font-family: 'Libre Barcode 128 Text';
+    font-size: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card{
+    margin: 30px;
+    height: 380px;
+    width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-header{
+    text-align: center;
 }

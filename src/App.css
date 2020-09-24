@@ -1,15 +1,17 @@
 #title{
-    background-color: rgb(0, 0, 0);
     justify-content: center;
-    color:white;
-}
-
-#body{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(10,0,23,1) 55%, rgba(51,2,79,1) 100%);
-    max-height: 480px;
-    margin-top: 50px
+    color:rgb(0, 0, 0);
 }
 
 #title h1{
     font-family: 'Libre Barcode 128 Text';
+    font-size: 70px;
 }
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

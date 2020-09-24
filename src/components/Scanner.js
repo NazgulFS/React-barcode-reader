@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row, Card } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Quagga from "quagga";
 import './scann.css';
 
 const Scanner = () => {
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const [item, setItem] = useState();
   const [format, setFormat] = useState();
   const onDetected = (data) => {
@@ -56,27 +61,15 @@ const Scanner = () => {
   }, []);
 
   return (
-    <Row id="videodata">
-      <Col md={6} sm={12}>
-      <div id="interactive" class="viewport">
-        <video class="videoCamera" autoplay="true" preload="auto" src="" muted="true"
-              playsinline="true"></video>
-        <canvas class="drawingBuffer"></canvas>
-      </div>
-      </Col>
-      <Col md={{span: 4, offset: 2}} sm={12}>
-        <Card>
-            <Card.Body>
-              <Card.Header>Barcode data</Card.Header>
-              <Card.Text>
-                <p>CODE: {item}</p>
-                <p>CODE FORMAT: {format}</p> 
-              </Card.Text>
-            </Card.Body>
-          </Card>
-       
-      </Col>
-    </Row>
+    <Container className="text-center">
+      <Row id="videodata">
+        <div id="interactive" className="viewport">
+          <video className="videoCamera" autoPlay="true" preload="auto" src="" muted="true"></video>
+          <canvas className="drawingBuffer"></canvas>
+        </div>
+      </Row>
+
+    </Container>
   );
 };
 

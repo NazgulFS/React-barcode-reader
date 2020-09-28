@@ -1,7 +1,7 @@
 # Barcode reader in react-app
 
 Enabled formats for scann: code_128_reader and ean_reader<br />
-use Quagga library
+use Quagga library from https://serratus.github.io/quaggaJS/
 
 ### `npm install`
 ### `npm start`

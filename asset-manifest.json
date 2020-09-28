@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/NazgulFS/React-barcode-reader/static/css/main.6c6be46a.chunk.css",
+    "main.js": "/NazgulFS/React-barcode-reader/static/js/main.2dd7ce74.chunk.js",
+    "main.js.map": "/NazgulFS/React-barcode-reader/static/js/main.2dd7ce74.chunk.js.map",
+    "runtime-main.js": "/NazgulFS/React-barcode-reader/static/js/runtime-main.07189881.js",
+    "runtime-main.js.map": "/NazgulFS/React-barcode-reader/static/js/runtime-main.07189881.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/NazgulFS/React-barcode-reader/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.12dea315.chunk.js": "/NazgulFS/React-barcode-reader/static/js/2.12dea315.chunk.js",
+    "static/js/2.12dea315.chunk.js.map": "/NazgulFS/React-barcode-reader/static/js/2.12dea315.chunk.js.map",
+    "index.html": "/NazgulFS/React-barcode-reader/index.html",
+    "precache-manifest.fc131f70256adf8b34686e399858d029.js": "/NazgulFS/React-barcode-reader/precache-manifest.fc131f70256adf8b34686e399858d029.js",
+    "service-worker.js": "/NazgulFS/React-barcode-reader/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/NazgulFS/React-barcode-reader/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.6c6be46a.chunk.css.map": "/NazgulFS/React-barcode-reader/static/css/main.6c6be46a.chunk.css.map",
+    "static/js/2.12dea315.chunk.js.LICENSE.txt": "/NazgulFS/React-barcode-reader/static/js/2.12dea315.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07189881.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.12dea315.chunk.js",
+    "static/css/main.6c6be46a.chunk.css",
+    "static/js/main.2dd7ce74.chunk.js"
+  ]
+}

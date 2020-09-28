@@ -1,7 +1,7 @@
-#Barcode reader
-Enabled formats for scann: code_128_reader and ean_reader
+# Barcode reader in react-app
 
-### use Quagga library
+Enabled formats for scann: code_128_reader and ean_reader<br />
+use Quagga library
 
 ### `npm install`
 ### `npm start`

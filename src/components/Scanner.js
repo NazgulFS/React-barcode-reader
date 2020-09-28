@@ -1,20 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { Container, Row } from 'react-bootstrap';
+import React, { Fragment, useEffect, useState } from "react";
+import { Row, ListGroup, Card, ListGroupItem, Col } from 'react-bootstrap';
 import Quagga from "quagga";
 import './scann.css';
 
 const Scanner = () => {
-
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   const [item, setItem] = useState();
   const [format, setFormat] = useState();
   const onDetected = (data) => {
     setItem(data.codeResult.code);
     setFormat(data.codeResult.format);
-    console.log(data);
+    
   };
 
   useEffect(() => {
@@ -57,19 +53,34 @@ const Scanner = () => {
 
     return () => {
       Quagga.offDetected(onDetected);
+      Quagga.stop();
     };
   }, []);
 
   return (
-    <Container className="text-center">
-      <Row id="videodata">
-        <div id="interactive" className="viewport">
-          <video className="videoCamera" autoPlay="true" preload="auto" src="" muted="true"></video>
-          <canvas className="drawingBuffer"></canvas>
-        </div>
-      </Row>
+    <Fragment>
 
-    </Container>
+        <Row id="videodata">
+          <Col>
+          <div id="interactive" className="viewport">
+            <video className="videoCamera" autoPlay="true" preload="auto" src="" muted="true"></video>
+            <canvas className="drawingBuffer"></canvas>
+          </div>
+          </Col>
+
+          <Col>
+            <Card bg="secondary" style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title>Product</Card.Title>
+              </Card.Body>
+              <ListGroup className="list-group-flush">
+                <ListGroupItem>Code: {item}</ListGroupItem>
+                <ListGroupItem>Format: {format}</ListGroupItem>
+              </ListGroup>
+            </Card>
+          </Col>
+        </Row>
+    </Fragment>
   );
 };
 

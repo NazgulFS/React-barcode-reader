@@ -3,6 +3,8 @@
 Enabled formats for scann: code_128_reader and ean_reader<br />
 use Quagga library from https://serratus.github.io/quaggaJS/
 
+Live: https://nazgulfs.github.io/React-barcode-reader/
+
 ### `npm install`
 ### `npm start`
 
